@@ -2,6 +2,7 @@
 
 /**
  *  Representa a un cliente que hace un pedido 
+ *   @ Fermin Lanzas
  */
 public class Cliente
 {
@@ -52,8 +53,7 @@ public class Cliente
      * representación textual del cliente
      */
     public String toString() {
-         
-          
+         return String.format("%10s: %-10s\n%10s: %-10s\n%10s: %-10s\n%10s: %-10s", "NOMBRE", nombre, "DIRECCION", direccion, "CIUDAD", ciudad, "PROVINCIA", provincia);         
     }
     
     /**

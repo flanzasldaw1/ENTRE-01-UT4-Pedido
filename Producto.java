@@ -1,5 +1,5 @@
 /**
- *  
+ *   @ Fermin Lanzas
  * Modela un producto. Todo producto tiene un nombre y un  precio unidad 
  */
 public class Producto
@@ -32,8 +32,9 @@ public class Producto
     /**
      * obtiene un nuevo producto copia idéntica del actual
      */
-    public         obtenerCopia() {
-         
+    public Producto obtenerCopia() {
+        Producto copia = new Producto(nombre, precio); 
+        return copia;
     }
 
     /**
@@ -41,7 +42,7 @@ public class Producto
      * (ver enunciado)
      */
     public String toString() {
-        
+        return String.format("%30s | %8.2f€ unidad", nombre, precio);
     }
 
 }
